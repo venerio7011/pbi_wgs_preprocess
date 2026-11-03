@@ -1,0 +1,228 @@
+# =============================================================================
+# PBI Pipeline .gitignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# -----------------------------------------------------------------------------
+# Virtual Environments
+# -----------------------------------------------------------------------------
+venv/
+ENV/
+env/
+.venv/
+.env/
+venv_*/
+*_venv/
+.conda/
+conda-env/
+
+# -----------------------------------------------------------------------------
+# Jupyter Notebook
+# -----------------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Notebook cell outputs (optional - uncomment if you want clean notebooks)
+# *.ipynb
+
+# -----------------------------------------------------------------------------
+# IDE / Editor
+# -----------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+.spyderproject
+.spyproject
+
+# -----------------------------------------------------------------------------
+# macOS
+# -----------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# -----------------------------------------------------------------------------
+# Windows
+# -----------------------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# -----------------------------------------------------------------------------
+# Linux
+# -----------------------------------------------------------------------------
+*~
+.directory
+.Trash-*
+
+# -----------------------------------------------------------------------------
+# Data Files (DO NOT COMMIT REAL DATA)
+# -----------------------------------------------------------------------------
+# Input data
+input/
+data/
+raw_data/
+*.fasta
+*.faa
+*.fna
+*.fa
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+*.gbk
+*.gbff
+*.gff
+*.gff3
+
+# Output data
+output/
+results/
+predictions/
+*.tsv
+*.csv
+*.xlsx
+*.xls
+
+# Large files
+*.tar
+*.tar.gz
+*.zip
+*.gz
+*.bz2
+*.7z
+*.rar
+
+# Binary data
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# -----------------------------------------------------------------------------
+# Model Files (Large)
+# -----------------------------------------------------------------------------
+models/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+checkpoints/
+weights/
+
+# Hugging Face cache
+.cache/
+~/.cache/huggingface/
+
+# -----------------------------------------------------------------------------
+# Logs and Temporary Files
+# -----------------------------------------------------------------------------
+logs/
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+.tmp/
+tmp/
+temp/
+
+# -----------------------------------------------------------------------------
+# Test and Coverage
+# -----------------------------------------------------------------------------
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# -----------------------------------------------------------------------------
+# Documentation Build
+# -----------------------------------------------------------------------------
+docs/_build/
+site/
+
+# -----------------------------------------------------------------------------
+# Secrets and Credentials (CRITICAL)
+# -----------------------------------------------------------------------------
+.env
+.env.*
+*.env
+secrets.json
+credentials.json
+config.local.json
+*.pem
+*.key
+*.crt
+*.p12
+api_keys.txt
+tokens.txt
+
+# -----------------------------------------------------------------------------
+# Project-specific exclusions
+# -----------------------------------------------------------------------------
+# Colab downloaded results
+pbi_results.zip
+results.zip
+
+# Sample/test data (if any)
+sample_data/
+test_data/
+example_output/
+
+# Personal notes
+notes.txt
+TODO.txt
+NOTES.md
+
+# Backup files
+*.orig
+*.bak
